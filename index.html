@@ -16,7 +16,7 @@
           <a href="#" class="flex items-center gap-3">
             <img src="assets/logo.png" alt="Emergency Service logo" class="w-11 h-11 rounded-full object-cover" />
             <div class="hidden sm:block leading-tight">
-              <div class="text-green-600 font-extrabold text-lg">Emergency</div>
+              <div class="text-green-600 font-bold text-lg">Emergency</div>
               <div class="text-green-600 font-semibold -mt-1">Service</div>
             </div>
           </a>
@@ -46,10 +46,273 @@
     <section class="bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-700 text-white">
       <div class="max-w-6xl mx-auto px-4 py-12 sm:py-20 text-center">
         <img src="assets/logo-dark.png" alt="Government seal" class="mx-auto w-20 h-20 sm:w-24 sm:h-24 object-contain" />
-        <h1 class="mt-6 text-3xl sm:text-5xl font-extrabold leading-tight">জরুরি সেবা ডিরেক্টরি</h1>
+        <h1 class="mt-6 text-3xl sm:text-5xl font-bold leading-tight">জরুরি সেবা ডিরেক্টরি</h1>
         <p class="mt-4 text-sm sm:text-lg text-emerald-100 max-w-3xl mx-auto">Government Emergency Services at Your Fingertip – A Project by&nbsp;Government of the People’s Republic of Bangladesh</p>
       </div>
     </section>
+
+    <!-- Services grid + sidebar -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <!-- cards (span 3 on lg) -->
+        <div class="lg:col-span-3">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card template: copy for each service -->
+            <article class="bg-white rounded-lg shadow px-5 py-6 relative" data-service="National Emergency" data-number="999">
+              <button class="absolute top-4 right-4 text-gray-300 hover:text-red-400" aria-label="favorite">
+                <!-- heart outline -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.6-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+                </svg>
+              </button>
+
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-rose-50 rounded-lg flex items-center justify-center">
+                  <img src="assets/emergency.png" alt="National Emergency" class="w-7 h-7 object-contain" />
+                </div>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">জাতীয় জরুরি সেবা</h3>
+              <p class="mt-1 text-sm text-gray-500">National Emergency</p>
+
+              <div class="mt-6">
+                <div class="text-2xl font-bold">999</div>
+                <div class="mt-2 inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full">সার্বজনীন</div>
+              </div>
+
+              <div class="mt-6 flex gap-3">
+                <button class="copy-btn flex-1 border border-gray-200 rounded-md px-3 py-2 text-sm text-gray-700" data-number="999">Copy</button>
+                <button class="call-btn flex-1 bg-green-600 hover:bg-green-700 text-white rounded-md px-3 py-2 text-sm flex items-center justify-center" data-number="999">Call</button>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow px-5 py-6 relative" data-service="Police" data-number="999">
+              <button class="absolute top-4 right-4 text-gray-300 hover:text-red-400" aria-label="favorite">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.6-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+                </svg>
+              </button>
+
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
+                  <img src="assets/police.png" alt="Police" class="w-7 h-7 object-contain" />
+                </div>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">পুলিশ</h3>
+              <p class="mt-1 text-sm text-gray-500">Police</p>
+
+              <div class="mt-6">
+                <div class="text-2xl font-bold">999</div>
+                <div class="mt-2 inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full">পুলিশ</div>
+              </div>
+
+              <div class="mt-6 flex gap-3">
+                <button class="copy-btn flex-1 border border-gray-200 rounded-md px-3 py-2 text-sm text-gray-700" data-number="999">Copy</button>
+                <button class="call-btn flex-1 bg-green-600 hover:bg-green-700 text-white rounded-md px-3 py-2 text-sm flex items-center justify-center" data-number="999">Call</button>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow px-5 py-6 relative" data-service="Fire Service" data-number="999">
+              <button class="absolute top-4 right-4 text-gray-300 hover:text-red-400" aria-label="favorite">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.6-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+                </svg>
+              </button>
+
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-rose-50 rounded-lg flex items-center justify-center">
+                  <img src="assets/fire-service.png" alt="Fire Service" class="w-7 h-7 object-contain" />
+                </div>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">ফায়ার সার্ভিস</h3>
+              <p class="mt-1 text-sm text-gray-500">Fire Service</p>
+
+              <div class="mt-6">
+                <div class="text-2xl font-bold">999</div>
+                <div class="mt-2 inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full">ফায়ার</div>
+              </div>
+
+              <div class="mt-6 flex gap-3">
+                <button class="copy-btn flex-1 border border-gray-200 rounded-md px-3 py-2 text-sm text-gray-700" data-number="999">Copy</button>
+                <button class="call-btn flex-1 bg-green-600 hover:bg-green-700 text-white rounded-md px-3 py-2 text-sm flex items-center justify-center" data-number="999">Call</button>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow px-5 py-6 relative" data-service="Ambulance" data-number="1994-999999">
+              <button class="absolute top-4 right-4 text-gray-300 hover:text-red-400" aria-label="favorite">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.6-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+                </svg>
+              </button>
+
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-rose-50 rounded-lg flex items-center justify-center">
+                  <img src="assets/ambulance.png" alt="Ambulance" class="w-7 h-7 object-contain" />
+                </div>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">অ্যাম্বুলেন্স</h3>
+              <p class="mt-1 text-sm text-gray-500">Ambulance</p>
+
+              <div class="mt-6">
+                <div class="text-2xl font-bold">1994-999999</div>
+                <div class="mt-2 inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full">স্বাস্থ্য</div>
+              </div>
+
+              <div class="mt-6 flex gap-3">
+                <button class="copy-btn flex-1 border border-gray-200 rounded-md px-3 py-2 text-sm text-gray-700" data-number="1994-999999">Copy</button>
+                <button class="call-btn flex-1 bg-green-600 hover:bg-green-700 text-white rounded-md px-3 py-2 text-sm flex items-center justify-center" data-number="1994-999999">Call</button>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow px-5 py-6 relative" data-service="Women & Child Helpline" data-number="109">
+              <button class="absolute top-4 right-4 text-gray-300 hover:text-red-400" aria-label="favorite">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.6-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+                </svg>
+              </button>
+
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-rose-50 rounded-lg flex items-center justify-center">
+                  <img src="assets/emergency.png" alt="Women & Child" class="w-7 h-7 object-contain" />
+                </div>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">নারী ও শিশু সহায়তা</h3>
+              <p class="mt-1 text-sm text-gray-500">Women & Child Helpline</p>
+
+              <div class="mt-6">
+                <div class="text-2xl font-bold">109</div>
+                <div class="mt-2 inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full">সহায়তা</div>
+              </div>
+
+              <div class="mt-6 flex gap-3">
+                <button class="copy-btn flex-1 border border-gray-200 rounded-md px-3 py-2 text-sm text-gray-700" data-number="109">Copy</button>
+                <button class="call-btn flex-1 bg-green-600 hover:bg-green-700 text-white rounded-md px-3 py-2 text-sm flex items-center justify-center" data-number="109">Call</button>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow px-5 py-6 relative" data-service="Anti-Corruption" data-number="106">
+              <button class="absolute top-4 right-4 text-gray-300 hover:text-red-400" aria-label="favorite">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.6-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+                </svg>
+              </button>
+
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-rose-50 rounded-lg flex items-center justify-center">
+                  <img src="assets/emergency.png" alt="Anti-Corruption" class="w-7 h-7 object-contain" />
+                </div>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">দুদক</h3>
+              <p class="mt-1 text-sm text-gray-500">Anti-Corruption</p>
+
+              <div class="mt-6">
+                <div class="text-2xl font-bold">106</div>
+                <div class="mt-2 inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full">সরকারি</div>
+              </div>
+
+              <div class="mt-6 flex gap-3">
+                <button class="copy-btn flex-1 border border-gray-200 rounded-md px-3 py-2 text-sm text-gray-700" data-number="106">Copy</button>
+                <button class="call-btn flex-1 bg-green-600 hover:bg-green-700 text-white rounded-md px-3 py-2 text-sm flex items-center justify-center" data-number="106">Call</button>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow px-5 py-6 relative" data-service="Electricity Outage" data-number="16216">
+              <button class="absolute top-4 right-4 text-gray-300 hover:text-red-400" aria-label="favorite">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.6-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+                </svg>
+              </button>
+
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-rose-50 rounded-lg flex items-center justify-center">
+                  <img src="assets/emergency.png" alt="Electricity" class="w-7 h-7 object-contain" />
+                </div>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">বিদ্যুৎ বিঘ্ন</h3>
+              <p class="mt-1 text-sm text-gray-500">Electricity Outage</p>
+
+              <div class="mt-6">
+                <div class="text-2xl font-bold">16216</div>
+                <div class="mt-2 inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full">বিদ্যুৎ</div>
+              </div>
+
+              <div class="mt-6 flex gap-3">
+                <button class="copy-btn flex-1 border border-gray-200 rounded-md px-3 py-2 text-sm text-gray-700" data-number="16216">Copy</button>
+                <button class="call-btn flex-1 bg-green-600 hover:bg-green-700 text-white rounded-md px-3 py-2 text-sm flex items-center justify-center" data-number="16216">Call</button>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow px-5 py-6 relative" data-service="BRAC" data-number="16445">
+              <button class="absolute top-4 right-4 text-gray-300 hover:text-red-400" aria-label="favorite">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.6-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+                </svg>
+              </button>
+
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-rose-50 rounded-lg flex items-center justify-center">
+                  <img src="assets/brac.png" alt="BRAC" class="w-7 h-7 object-contain" />
+                </div>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">ব্র্যাক</h3>
+              <p class="mt-1 text-sm text-gray-500">Brac</p>
+
+              <div class="mt-6">
+                <div class="text-2xl font-bold">16445</div>
+                <div class="mt-2 inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full">এনজিও</div>
+              </div>
+
+              <div class="mt-6 flex gap-3">
+                <button class="copy-btn flex-1 border border-gray-200 rounded-md px-3 py-2 text-sm text-gray-700" data-number="16445">Copy</button>
+                <button class="call-btn flex-1 bg-green-600 hover:bg-green-700 text-white rounded-md px-3 py-2 text-sm flex items-center justify-center" data-number="16445">Call</button>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow px-5 py-6 relative" data-service="Bangladesh Railway" data-number="163">
+              <button class="absolute top-4 right-4 text-gray-300 hover:text-red-400" aria-label="favorite">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.6-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+                </svg>
+              </button>
+
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-rose-50 rounded-lg flex items-center justify-center">
+                  <img src="assets/Bangladesh-Railway.png" alt="Railway" class="w-7 h-7 object-contain" />
+                </div>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">বাংলাদেশ রেলওয়ে</h3>
+              <p class="mt-1 text-sm text-gray-500">Bangladesh Railway</p>
+
+              <div class="mt-6">
+                <div class="text-2xl font-bold">163</div>
+                <div class="mt-2 inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full">পরিবহন</div>
+              </div>
+
+              <div class="mt-6 flex gap-3">
+                <button class="copy-btn flex-1 border border-gray-200 rounded-md px-3 py-2 text-sm text-gray-700" data-number="163">Copy</button>
+                <button class="call-btn flex-1 bg-green-600 hover:bg-green-700 text-white rounded-md px-3 py-2 text-sm flex items-center justify-center" data-number="163">Call</button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- sidebar -->
+        <aside class="lg:col-span-1">
+          <div class="bg-white rounded-lg shadow p-4 sticky top-6">
+            <div class="flex items-center justify-between">
+              <h4 class="font-semibold">Call History</h4>
+              <button id="clearHistory" class="bg-green-600 text-white text-sm px-3 py-1 rounded-full">Clear</button>
+            </div>
+
+            <ul id="callHistory" class="mt-4 space-y-3">
+              <!-- history items will be injected here -->
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+  <!-- Scripts removed per request; interactive behavior will be added later -->
 
 </body>
 </html>
